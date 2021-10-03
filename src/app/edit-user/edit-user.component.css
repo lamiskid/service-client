@@ -1,0 +1,18 @@
+.input-full-width {
+    width: 95%;
+  }
+  .box{
+      align-items: center;
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .register-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    
+  }

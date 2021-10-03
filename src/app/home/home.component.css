@@ -1,0 +1,54 @@
+.card{
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: auto;
+    
+    display: flex;
+    padding: 4px;
+    margin-bottom: 5%;
+    
+  
+    
+}
+.register-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+   height: 100px;
+   width: 100px;
+  }
+  .username{
+    position: relative;
+    float: right;
+  }
+  .mat-card-footer{
+    margin-left: 50%;
+   
+    align-items: center;
+   
+    margin-bottom: 5px;
+    
+  }
+  .mat-card-title{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     display: block;
+  
+  }
+ .mat-card-header{
+    display: inline-blocks;
+  }
+  .mat-card-content{
+    display: flex;
+  }
+
+   
+    .content {
+        
+        margin: 82px auto 32px;
+        padding: 0 16px;
+        max-width: 960px;
+      
+        padding: 20px;
+        align-items: center;
+       
+ }

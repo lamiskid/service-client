@@ -1,0 +1,55 @@
+
+
+<div class="card-container">
+<mat-card class="register-card">
+    <mat-card-header>
+        <div mat-card-avatar class="register-header-image"></div>
+        <mat-card-title>signup</mat-card-title>
+        <mat-card-subtitle>servicer</mat-card-subtitle>
+      </mat-card-header>
+    
+    <mat-card-content>
+        <form class="register-form" (ngSubmit)="signup()"    [formGroup]="signupForm" 
+                  name="signupFrom">
+            <mat-form-field class="register-full-width" appearance="outline">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput  placeholder="Email" name="email" ngModel=Email formControlName="email">
+              <mat-error *ngIf="signupForm.get('email')?.errors">
+                Email is   <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          
+            
+            <mat-form-field class="register-full-width" appearance="outline">
+                <mat-label>Username</mat-label>
+                <input type="text" matInput  placeholder="Username" formControlName="username">
+                <mat-error *ngIf="signupForm.get('username')?.errors?.required">
+                  Username is   <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+
+              <div>
+                <span class="atLink">forgot password</span>
+              <mat-form-field class="register-full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="text" matInput  placeholder="Password"  formControlName="password"
+                    [type]="hide ?'password' : 'text'" required>
+                    <button mat-icon-button matSuffix (click)="hide=!hide"
+                    [attr.aria-label]=" 'Hide password' " [attr.aria-pressed]= "hide">
+                  <mat-icon>{{hide ? 'visibility_off':'visibility'}}</mat-icon>
+                </button>
+
+                <mat-error *ngIf="signupForm.get('password')?.errors?.required">
+                   Required password
+                </mat-error>
+              </mat-form-field>
+              </div>
+              <div class="btn">
+              <button class="signup-button" type="submit" mat-raised-button color="primary">Signup</button>
+            </div>
+             
+        </form>
+    </mat-card-content>
+  
+  </mat-card>
+</div>
