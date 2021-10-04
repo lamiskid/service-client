@@ -25,6 +25,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { EditUserComponent } from './edit-user/edit-user.component'; 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.component';
+import { NgxPayPalModule } from 'ngx-paypal';
+
 
 
 
@@ -39,12 +44,14 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     HomeComponent,
     SideBarComponent,
     EditUserComponent,
+    PaymentGatewayComponent,
     
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxPayPalModule,
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
@@ -58,7 +65,10 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     MatListModule,
     MatMenuModule,
     MatGridListModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    
    
   
     

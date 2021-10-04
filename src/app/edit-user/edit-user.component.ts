@@ -11,5 +11,12 @@ export class EditUserComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  openFile(){
+    console.log('hell')
+    document.querySelector('input')!.click();
+  }
+  handle(e:any){
+    console.log('Change input file')
+  }
 
 }
